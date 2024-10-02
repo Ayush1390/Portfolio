@@ -1,6 +1,8 @@
+import { FloatingNav } from "./ui/FloatingNav"
+import MagicButton from "./ui/MagicButton"
 import { Spotlight } from "./ui/Spotlight"
 import { TextGenerateEffect } from "./ui/TextGenerateEffect"
-
+import {FaLocationArrow} from 'react-icons/fa' 
 
 const Hero = () => {
   return (
@@ -20,10 +22,17 @@ const Hero = () => {
                     Dynamic web magic with Next.js
                 </h2>
                 <TextGenerateEffect className="text-center text-[40px] md:text-4xl lg:text-6xl" 
-                words="Transforming Concepts into Seamless Experinces"/>
+                words="Transforming Concepts into Seamless User Experinces"/>
                 <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
                 Hi, I a&apos;m Ayush, a Next.js Developer based in India 
                 </p>
+                    <a href="#about">
+                        <MagicButton 
+                        title="Show my Work"
+                        icon={<FaLocationArrow/>}
+                        position="right"
+                        />
+                    </a>                
             </div>
         </div>
     </div>
