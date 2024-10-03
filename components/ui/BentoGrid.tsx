@@ -49,9 +49,9 @@ export const BentoGridItem = ({
         className
       )}
       style={{
-        background: "rgb(2,0,36)",
+        background: "rgb(4,7,29)",
         backgroundColor:
-          "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(59,59,68,1) 26%, rgba(93,108,111,1) 100%)",
+          "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
     >
       <div className={`${id === 6 && 'flex justify-center'} h-full`}>
@@ -85,16 +85,18 @@ export const BentoGridItem = ({
         <div
           className={cn(
             titleClassName,
-            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
+            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10 sm:mb-5 lg:mb-20 md:mb-10"
           )}
         >
           <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10">
             {description}
           </div>
-          <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
+          <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10 ">
             {title}
           </div>
-          {id === 2 && <GlobeDemo />}
+          {id === 2 && <div>
+            <GlobeDemo/>
+            </div>}
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8 ">
