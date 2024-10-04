@@ -48,7 +48,7 @@ export const FloatingNav = ({
           opacity: 1,
           y: -100,
         }}
-        animate={{
+        animate={{x
           y: visible ? 0 : -100,
           opacity: visible ? 1 : 0,
         }}
